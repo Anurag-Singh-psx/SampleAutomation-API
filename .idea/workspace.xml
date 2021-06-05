@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e09d94b-ea16-46b7-baab-429f2fd9c926" name="Default Changelist" comment="" />
+    <list default="true" id="2e09d94b-ea16-46b7-baab-429f2fd9c926" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConvertJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConvertJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JiraApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JiraApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsonBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JsonBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JsonBody.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +51,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewPojo">
+  <component name="RunManager" selected="Application.JiraApi">
+    <configuration name="JiraApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JiraApi" />
+      <module name="RestAssuredApiAutomation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NewPojo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NewPojo" />
       <module name="RestAssuredApiAutomation" />
@@ -62,6 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JiraApi" />
         <item itemvalue="Application.NewPojo" />
         <item itemvalue="Application.pojo" />
       </list>

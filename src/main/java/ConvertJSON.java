@@ -10,6 +10,9 @@ public class ConvertJSON {
     public static String getString(String value){
         return jsonPath.getString(value);
     }
+    public static int getInt(String value){
+        return jsonPath.getInt(value);
+    }
 
     public static void getComplex(){
         System.out.println(jsonPath.getInt("courses.size()"));
@@ -23,5 +26,15 @@ public class ConvertJSON {
 
         System.out.println(totalPrice);
         Assert.assertEquals(jsonPath.getInt("dashboard.purchaseAmount"),totalPrice);
+    }
+
+    public static void compareJira(int commentId){
+
+        for (int i=0;i<jsonPath.getInt("fields.comment.comments.size()");i++){
+            if(jsonPath.getInt("fields.comment.comments["+i+"].id") == commentId){
+                System.out.println(jsonPath.getString("fields.comment.comments["+i+"].body"));
+            }
+        }
+
     }
 }
