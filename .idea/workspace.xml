@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e09d94b-ea16-46b7-baab-429f2fd9c926" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConvertJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConvertJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JsonBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo.java" afterDir="false" />
-    </list>
+    <list default="true" id="2e09d94b-ea16-46b7-baab-429f2fd9c926" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
