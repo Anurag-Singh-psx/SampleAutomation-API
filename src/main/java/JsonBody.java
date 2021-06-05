@@ -33,7 +33,7 @@ public class JsonBody {
                 "\n" +
                 "\"dashboard\": {\n" +
                 "\n" +
-                "\"purchaseAmount\": 910,\n" +
+                "\"purchaseAmount\": 135,\n" +
                 "\n" +
                 "\"website\": \"rahulshettyacademy.com\"\n" +
                 "\n" +
@@ -74,5 +74,17 @@ public class JsonBody {
                 "]\n" +
                 "\n" +
                 "}";
+    }
+
+
+    public static String AddBookBody(String name,String isbn,String aisle, String author){
+        return "{\n" +
+                "\n" +
+                "\"name\":\""+name+"\",\n" +
+                "\"isbn\":\""+name+"\",\n" +
+                "\"aisle\":\""+aisle+"\",\n" +
+                "\"author\":\""+author+"\"\n" +
+                "}\n" +
+                " ";
     }
 }

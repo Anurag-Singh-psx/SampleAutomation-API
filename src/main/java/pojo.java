@@ -11,7 +11,6 @@ public class pojo {
         //Three Principle Given, When, Then
 
         System.out.println("---------------ADD PLACE-----------------------");
-
         RestAssured.baseURI = "https://rahulshettyacademy.com";
         String addPlaceResponse = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json").
                 body(JsonBody.getAddPlaceBody()).
@@ -22,7 +21,6 @@ public class pojo {
         String placeId = ConvertJSON.getString("place_id");
 
         System.out.println("---------------UPDATE PLACE-----------------------");
-
         String updatePlaceResponse = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json").
                 body(JsonBody.getUpdatePlaceBody(placeId)).
                 when().put("maps/api/place/update/json").
@@ -32,7 +30,6 @@ public class pojo {
         Assert.assertEquals("Address successfully updated", ConvertJSON.getString("msg"));
 
         System.out.println("---------------VERIFY UPDATE PLACE-----------------------");
-
         String getPlaceResponse = given().queryParam("key", "qaclick123").queryParam("place_id", placeId).
                 when().get("maps/api/place/get/json").
                 then().log().all().assertThat().statusCode(200).body("address", equalTo("70 Summer walk, INDIA")).
@@ -40,7 +37,7 @@ public class pojo {
         ConvertJSON.convertJson(getPlaceResponse);
         Assert.assertEquals("70 Summer walk, INDIA", ConvertJSON.getString("address"));
 
-
+        System.out.println("---------------COMPLEX JSON-----------------------");
         ConvertJSON.convertJson(JsonBody.getCourseBody());
         ConvertJSON.getComplex();
 

@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e09d94b-ea16-46b7-baab-429f2fd9c926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConvertJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConvertJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsonBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.NewPojo">
+    <configuration name="NewPojo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NewPojo" />
+      <module name="RestAssuredApiAutomation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="pojo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pojo" />
       <module name="RestAssuredApiAutomation" />
@@ -60,6 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NewPojo" />
         <item itemvalue="Application.pojo" />
       </list>
     </recent_temporary>
@@ -85,5 +93,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
