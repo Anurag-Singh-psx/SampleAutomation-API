@@ -87,20 +87,4 @@ public class JsonBody {
                 "}\n" +
                 " ";
     }
-
-    public static String jiraLoginBody(){
-        return "{\n" +
-                "            \"username\":\"asingh.psx\",\n" +
-                "            \"password\":\"Aniket@1994\"     \n" +
-                "}";
-    }
-
-    public static String jiraAddComment(){
-        return "{\n" +
-                "    \"body\": \"oij Singh\",\n" +
-                "    \"visibility\": {\n" +
-                "        \"type\": \"role\",\n" +
-                "        \"value\": \"Administrators\"\n" +
-                "    }}";
-    }
 }
