@@ -1,5 +1,7 @@
+import getcomment.GetComments;
 import io.restassured.RestAssured;
 import io.restassured.filter.session.SessionFilter;
+import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
 
@@ -7,6 +9,8 @@ import java.io.File;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
+import pojo.AddComment;
+import pojo.AddComment.Visibility;
 
 public class JiraApi {
     public static void main(String[] args) {
@@ -49,6 +53,28 @@ public class JiraApi {
         ConvertJSON.compareJira(commentId);
         System.out.println(response);
         System.out.println("-------------------------------------------------------------------");
+
+        System.out.println("-----------------------------Deserialization--------------------------------------");
+        GetComments comments=given().filter(sessionFilter).pathParam("id", "10001")
+                .queryParam("fields", "comment").expect().defaultParser(Parser.JSON)
+                .when().get("rest/api/2/issue/{id}")
+                .then().statusCode(200).extract().response().as(GetComments.class);
+        System.out.println(comments.getKey());
+        System.out.println("----------------------------------------------------------------------------------");
+
+        System.out.println("-----------------------------serialization--------------------------------------");
+        AddComment addComment=new AddComment();
+        addComment.setBody("Serialization Comment..");
+        AddComment.Visibility visibility=addComment.new Visibility();
+        visibility.setType("role");
+        visibility.setValue("Administrators");
+
+        response = given().filter(sessionFilter).log().all().pathParam("id", "10001").header("Content-Type", "application/json")
+                .body(addComment).log().all()
+                .when().post("rest/api/2/issue/{id}/comment")
+                .then().log().all().assertThat().statusCode(201).extract().response().asString();
+        System.out.println(response);
+        System.out.println("----------------------------------------------------------------------------------");
 
     }
 }
